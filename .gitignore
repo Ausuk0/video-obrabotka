@@ -1,0 +1,19 @@
+# Результаты обработки
+output/
+
+# Исходные ролики (крупные файлы) — в репозиторий не кладём, создаются make_test_videos.py
+input/*.mp4
+input/*.mov
+input/*.mkv
+input/*.avi
+input/*.webm
+!input/.gitkeep
+
+# Python
+__pycache__/
+*.pyc
+
+# Служебные файлы ffmpeg / x264 (двухпроходное кодирование)
+ffmpeg2pass*
+*.log
+*.mbtree
